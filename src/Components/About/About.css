@@ -1,0 +1,58 @@
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+
+}
+
+.About_reverse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+.about_left p{
+    max-width: 650px;
+    font-size: 0.9vmax;
+    padding: 0 30px;
+}
+
+
+.about_left{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.about_right img{
+width:55vh;
+transition: 0.3s;
+}
+.about_right img:hover{
+    transform: translateY(-10px);
+}
+@media screen and (max-width:852px){
+
+    .About{
+        flex-direction: column-reverse;
+    }
+    .about_left{
+    align-items: center;
+    text-align: center;
+    }
+    .about_right img{
+
+        width: 30vh;
+    }
+    .about_left p {
+        font-size: 13px;
+    }
+
+}

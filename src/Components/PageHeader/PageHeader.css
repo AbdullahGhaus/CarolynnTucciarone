@@ -1,0 +1,44 @@
+.PageHeader{
+    background: url('../../assets/images/aboutpage-mainhead-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px 10%;
+    position: relative;
+}
+
+.pageheader_dog{
+    position: absolute;
+    right: 100px;
+}
+.pageheader_dog img{
+    width: 350px;
+    font-size: 10vmax;
+    width: 2em;
+}
+@media screen and (max-width:450px){
+    .pageheader_dog{
+        right:0px;
+        top: 250px !important;
+    }
+}
+@media screen and (max-width:852px){
+    .pageheader_dog{
+        right:0px;
+        top: 170px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .PageHeader{
+        background: url('../../assets/images/pageheader-mobile-bg.png');
+        padding: 120px 0;
+        background-size: 100% 100%;
+    }
+    .pageheader_dog{
+        right:0px;
+        top: 150px !important;
+    }
+}

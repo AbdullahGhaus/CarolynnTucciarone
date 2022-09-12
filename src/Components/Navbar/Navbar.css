@@ -1,0 +1,126 @@
+.Navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #0d0602;
+    z-index: 1;
+    position: relative;
+}
+
+.navbar_mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.navbar_mid p{
+    color: white;
+    padding: 40px 10px;
+    border-radius: 0px 0px 40px 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar_toggle{
+    display: none;
+
+}
+
+.navbar_mid p:hover{
+    background-color: #e97d2e;
+}
+
+.logo_text{
+    background-color: transparent;
+    padding: 5% 5px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo_text:hover{
+    transform: translateY(-10px);
+}
+.logo_text img{
+    font-size: 6vmax;
+    width: 2em;;
+}
+
+@media screen and (max-width:852px){
+    .navbar_mid{
+        display: none;
+    }
+    .navbar_toggle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+
+/* TOGGLE BUTTON */
+
+.navbar_toggle button{
+  background-color: #e97d2e;
+  border-radius: 30px;
+  font-size: 0.9vmax;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  border:1px solid black;
+}
+
+.navbar_toggle button img{
+width: 15px;
+}
+
+.navbar_after_toggle{
+    position: fixed;
+    background-color: red;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar_after_toggle_sticky{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 100vh;
+    width: 40vw;
+    transition: 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.navbar_after_toggle h6{
+  color: white;
+  transition: 0.3s;
+  display: inline-block;
+  font-weight: bold;
+}
+.navbar_after_toggle p:hover{
+  background-color: #e97d2e;
+  color: white;
+
+}
+.navbar_after_toggle Link{
+background-color: red;
+}
+
+
+
+/*  */
