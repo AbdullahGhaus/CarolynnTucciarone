@@ -1,0 +1,127 @@
+.Contact{
+    padding: 200px 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contact_left{
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    max-width: 400px;
+    border: 1px solid white;
+    margin-right: -100px;
+    z-index: 1;
+    transform: translateY(-180px);
+}
+
+
+
+.contact_left p{
+    font-size: 14px;
+}
+.contact_left h1{
+    font-size: 40px;
+}
+
+.contact_right p{
+    font-size: 14px;
+}
+
+.contact_right{
+    background-color: black;
+    padding: 50px 150px 50px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    max-width: 600px;
+    border:1px solid white;
+    position: relative;
+}
+
+.contact_detail
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin:10px 0;
+}
+.contact_detail img{
+    font-size: 1.3vmax;
+    width: 2em;
+}
+
+.contact_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.contact_social img{ 
+    font-size: 1vmax;
+    width: 2em;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.contact_social img:hover{
+    transform: translateY(-10px);   
+}
+
+
+.contact_form input{
+    padding: 15px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.contact_form textarea{
+    padding: 15px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.contact_dog img{
+    position: absolute;
+    top: -300px;
+    right: 0;
+  width: 300px;
+}
+
+@media screen and (max-width:852px){
+    .contact_left{
+        margin: unset;
+        transform: translateY(-100px);
+    }
+    .contact_right{
+        padding: 30px;
+    }
+    .contact_form input{
+        width: 80%;
+    }
+    .contact_form textarea{
+        width: 80%;
+    }
+    .contact_dog img{
+        width: 150px;
+        top: -150px;
+    }
+    .contact_left{
+        display: none;
+    }
+}

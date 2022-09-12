@@ -1,0 +1,151 @@
+.Book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10vw 10%;
+}
+
+.Book_bookpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.book_top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 0 10vw;
+    flex-wrap: wrap;
+}
+
+.book_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    flex-wrap: wrap;
+}
+
+.book_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.book_card_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.book_card_img{
+    background: url("../../assets/images/book-card-red.png");
+    background-repeat: no-repeat;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+.book_card .book_card_img img{
+    transform: translateX(-70px);
+    font-size: 9vmax;
+    width: 2em;
+  
+}
+
+.book_card_reverse .book_card_img img{
+    transform: translateX(70px);
+    font-size: 9vmax;
+    width: 2em;
+}
+
+.book_card_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 60px;
+    max-width: 500px;
+    transform: translateX(30px);
+    text-align: left;
+
+}
+
+.book_card_text_reverse{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 60px;
+    max-width: 500px;
+    transform: translateX(-30px);
+    text-align: left;
+}
+
+.book_card_text button{
+    margin-top: 30px;
+}
+
+
+.book_card_text_payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top:20px;
+}
+
+.book_card_text_payment img:hover{
+    transform: translateY(-10px);
+}
+
+.book_card_text_payment img{
+    font-size: 0.9vmax;
+    width: 2em;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:852px){
+
+    .book_card .book_card_img img {
+            transform: unset;
+    }
+    .book_card_reverse .book_card_img img{
+        transform: unset;
+    }
+    .book_card_text_reverse{
+        transform: unset;
+    }
+    .book_card_text{
+        transform: unset;
+    }
+    .book_card{
+        gap:10px
+    }
+    .book_card_reverse{
+        gap:10px
+    }
+
+}
+

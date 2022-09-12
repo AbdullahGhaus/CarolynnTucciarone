@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Bbagian";
+  src: url("./assets/font/bBagian.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+p,button,input,textarea{
+  font-family: 'Merriweather', serif;
+  text-decoration: none !important;
+
+}
+input,textarea{
+  font-size: 0.9vmax !important;
+}
+p{
+  color:rgb(241, 241, 241);
+  line-height: 25px;
+  font-size: 0.9vmax !important;
+  text-decoration: none;
+}
+
+
+@media(max-width: 800px) {
+   p{
+    font-size: 1.5vmax !important;
+}
+input,textarea{
+  font-size: 1.5vmax !important;
+}
+.btn{
+  font-size: 1.2vmax !important;
+}
+.btn-black{
+  font-size: 1.2vmax !important;
+}
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Bbagian";
+  color:white;
+}
+
+h1{
+  font-size: 3vmax;
+  letter-spacing: 2px;
+}
+
+h2{
+  font-size: 2.8vmax;
+   letter-spacing: 2px;
+}
+
+h3{
+  font-size: 2.5vmax;
+   letter-spacing: 2px;
+}
+h4{
+  font-size: 2.2vmax;
+   letter-spacing: 2px;
+}
+h5{
+  font-size: 2vmax;
+   letter-spacing: 2px;
+}
+h6{
+  font-size: 1.8vmax;
+   letter-spacing: 2px;
+}
+
+
+
+*{
+  margin: 0;
+}
+
+body{
+  background: url('./assets/images/body-bg.png');
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+.btn{
+  background-color: #e97d2e;
+  padding: 1vw 2vw;
+  border-radius: 30px;
+  font-size: 0.9vmax;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  border:1px solid black;
+  color: black !important;
+}
+
+.btn:hover{
+  transform: translateY(-10px);
+}
+
+.displaynone{
+  display: none;
+}
+
+.btn-black{
+  background-color: black;
+  padding: 1vw 2vw;
+  border-radius: 30px;
+  font-size: 0.9vmax;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  border:1px solid black;
+  color:white ;
+}
+.btn-black:hover{
+  transform: translateY(-10px);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,29 @@
+.BuyNowPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw 10%;
+    text-align: center;
+}
+
+
+
+.BuyNowPage p{
+    max-width: 900px;
+}
+
+.buynow_tabs_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px 0;
+}
+
+.book_component{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
